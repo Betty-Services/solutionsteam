@@ -5,15 +5,6 @@ const getRecordFromCollection = async ({
   property,
   value,
 }) => {
-  console.log(
-    "getRecordFromCollection",
-    array,
-    byIndex,
-    index,
-    property,
-    value
-  );
-
   if (byIndex && !index) {
     throw new Error(
       "getRecordFromCollection: index is required when fetching by index"
