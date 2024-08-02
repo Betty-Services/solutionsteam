@@ -3,6 +3,26 @@
 Any steps created by the Solutions team within Betty Blocks, which are not part of another repo.
 For questions please contact Betty Blocks via the in-platform chat support or solutions@bettyblocks.com
 
+### Get Record from Collection
+
+getRecordFromCollection is an function designed to retrieve a specific record from an array of objects. The function allows for two methods of retrieval:
+
+- By index.
+- By matching a specific property value.
+
+The function accepts an object as an argument with the following properties:
+
+- array (Array): The array of objects from which the record will be retrieved.
+- byIndex (Boolean): A flag to determine the method of retrieval. If true, the record will be fetched by index. If false, the record will be fetched by matching a property value.
+- index (Number): The index of the record to be retrieved. This parameter is required if byIndex is true.
+  property (String): The property name to be used for matching. This parameter is required if byIndex is false.
+- value (any): The value of the property to be matched. This parameter is required if byIndex is false.
+
+The function will throw an error in the following cases:
+
+- If byIndex is true and index is not provided.
+- If byIndex is false and either property or value is not provided.
+
 ### Calculate Average Or Sum
 
 <!-- MK -->

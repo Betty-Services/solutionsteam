@@ -1,0 +1,72 @@
+{
+  "description": "Description",
+  "label": "Get Record From Collection",
+  "category": "Misc",
+  "icon": {
+    "name": "DataLineIcon",
+    "color": "Purple"
+  },
+  "options": [
+    {
+      "meta": {
+        "type": "Value",
+        "allowedKinds": ["ARRAY", "COLLECTION"],
+        "validations": {
+          "required": true
+        }
+      },
+      "name": "array",
+      "label": "Input Array",
+      "info": "The collection or array you to fetch a record from"
+    },
+    {
+      "label": "Fetch by index",
+      "name": "byIndex",
+      "info": "Check this if you want to fetch a record by its specific index. Uncheck this if you want to find a record by a specific property value.",
+      "meta": {
+        "type": "Boolean"
+      }
+    },
+    {
+      "meta": {
+        "type": "Number"
+      },
+      "name": "index",
+      "label": "Index",
+      "info": "The index of the record you want to fetch, the first object will have index 0! - use this if you are fetching by index"
+    },
+    {
+      "meta": {
+        "type": "Text"
+      },
+      "name": "property",
+      "label": "Property",
+      "info": "The property name of the record you want to fetch, e.g. id  - use this if you are NOT fetching by index"
+    },
+    {
+      "meta": {
+        "type": "Text"
+      },
+      "name": "value",
+      "label": "Value",
+      "info": "The value of the property you want to match, e.g. 3 - use this if you are NOT fetching by index"
+    },
+    {
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Inherit",
+          "source": "array",
+          "toSingleItem": true
+        },
+        "validations": {
+          "required": true
+        }
+      },
+      "name": "as",
+      "label": "Output object",
+      "info": "The name for the object/record you want to fetch"
+    }
+  ],
+  "yields": "NONE"
+}
