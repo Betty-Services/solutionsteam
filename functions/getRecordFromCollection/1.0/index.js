@@ -5,7 +5,7 @@ const getRecordFromCollection = async ({
   property,
   value,
 }) => {
-  if (byIndex && !index) {
+  if (byIndex && (index === null || index === undefined)) {
     throw new Error(
       "getRecordFromCollection: index is required when fetching by index"
     );
