@@ -10,7 +10,7 @@ getRecordFromCollection is an function designed to retrieve a specific record fr
 - By index.
 - By matching a specific property value.
 
-The function accepts an object as an argument with the following properties:
+The function accepts an the following arguments:
 
 - array (Array): The array of objects from which the record will be retrieved.
 - byIndex (Boolean): A flag to determine the method of retrieval. If true, the record will be fetched by index. If false, the record will be fetched by matching a property value.

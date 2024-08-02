@@ -1,5 +1,5 @@
 {
-  "description": "Description",
+  "description": "getRecordFromCollection is an function designed to retrieve a specific record from an array of objects. ",
   "label": "Get Record From Collection",
   "category": "Misc",
   "icon": {
