@@ -7,7 +7,7 @@ const getRecordFromCollection = async ({
 }) => {
   if (byIndex && (index === null || index === undefined)) {
     throw new Error(
-      "getRecordFromCollection: index is required when fetching by index"
+      "getRecordFromCollection: Getting a record by index but index is empty"
     );
   } else if (!byIndex && (!property || !value)) {
     throw new Error(
